@@ -24,7 +24,7 @@
     "@patternfly/react-table": "^2.17.5",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "systemjs": "^5.0.0"
+    "systemjs": "^0.20.17"
   },
   "devDependencies": {
     "@types/node": "^12.7.2",

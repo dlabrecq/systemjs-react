@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright 2018 Red Hat, Inc. and/or its affiliates.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,8 +16,9 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Button, Stack, StackItem, Tabs, Tab } from '@patternfly/react-core';
-import { Table } from '@patternfly/react-table';
+import { Button } from '@patternfly/react-core';
+// import { Button, Stack, StackItem, Tabs, Tab } from '@patternfly/react-core';
+// import { Table } from '@patternfly/react-table';
 
 const e = React.createElement;
 
@@ -25,37 +26,43 @@ export interface MainProps {
 }
 
 export class Main extends React.Component<MainProps> {
-    
+
     public constructor(props: MainProps) {
         super(props);
     }
 
     public render() {
         return (
-            <React.Fragment>
-                <Stack gutter='md'>
-                    <StackItem isFilled>
-                        <Button variant="primary">PF4-react Button</Button>
-                    </StackItem>
-                    <StackItem isFilled>
-                        <Tabs isFilled>
-                            <Tab eventKey={0} title="Tab item 1">
-                              Tab 1 section
-                            </Tab>
-                            <Tab eventKey={1} title="Tab item 2">
-                              Tab 2 section
-                            </Tab>
-                            <Tab eventKey={2} title="Tab item 3">
-                              Tab 3 section
-                            </Tab>
-                        </Tabs>
-                    </StackItem>
-                    <StackItem isFilled>
-                    </StackItem>
-                </Stack>
-            </React.Fragment>
+          <Button variant="primary">PF4-react Button</Button>
         );
     }
+
+    // public render() {
+    //     return (
+    //         <React.Fragment>
+    //             <Stack gutter='md'>
+    //                 <StackItem isFilled>
+    //                     <Button variant="primary">PF4-react Button</Button>
+    //                 </StackItem>
+    //                 <StackItem isFilled>
+    //                     <Tabs isFilled>
+    //                         <Tab eventKey={0} title="Tab item 1">
+    //                           Tab 1 section
+    //                         </Tab>
+    //                         <Tab eventKey={1} title="Tab item 2">
+    //                           Tab 2 section
+    //                         </Tab>
+    //                         <Tab eventKey={2} title="Tab item 3">
+    //                           Tab 3 section
+    //                         </Tab>
+    //                     </Tabs>
+    //                 </StackItem>
+    //                 <StackItem isFilled>
+    //                 </StackItem>
+    //             </Stack>
+    //         </React.Fragment>
+    //     );
+    // }
 };
 
 const domContainer = document.querySelector('#main_react_container');
